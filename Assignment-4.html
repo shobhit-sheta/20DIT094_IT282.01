@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20DIT094_Assignment-4</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: "Open Sans", sans-serif;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .a {
+        color: white;
+        padding-top: 25px;
+        font-weight: bold;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+    }
+
+    .mid {
+        display: inline-block;
+    }
+
+    b {
+        color: #727272;
+        font-size: 15px;
+        padding-right: 5px;
+
+    }
+
+    .b {
+        padding-top: 50px;
+    }
+
+    .b0 {
+        margin-top: 20px;
+
+        background-color: #f3f3f3b7;
+    }
+
+    .b1 {
+        background-color: #ffffff;
+        margin: 0px 200px;
+        height: 180px;
+        font-size: 25px;
+        text-align: center;
+        color: #333333;
+        padding-top: 25px;
+        font-weight: bold;
+    }
+
+    .b2 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-style: italic;
+    }
+
+    .b5 {
+        padding-top: 25px;
+        color: #727272;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .b6 {
+        background-color: #ffffff;
+        margin: 0px 200px;
+        height: 250px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 25px;
+        text-align: center;
+        color: #333333;
+        padding-top: 25px;
+        font-weight: bold;
+    }
+
+    .b1:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .b6:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    img {
+        border: none;
+        margin-left: 6px;
+        width: 90px;
+    }
+
+    .navbar {
+        background-color: black;
+        width: 100%;
+        height: 75px;
+        
+    }
+
+    .nav {
+        margin-left: 1050px;
+    }
+
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .first {
+        display: inline-block;
+        margin: 15px 0px;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: aliceblue;
+        transition: all 1s ease-in-out;
+
+    }
+
+    .first:hover {
+
+        text-decoration: underline;
+        color: aliceblue;
+    }
+
+    #m1 {
+        margin: 0px 200px;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .font {
+        font-size: 80px;
+        margin-bottom: 0px;
+    }
+
+    .spacee {
+        margin-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        color: #727272;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .size {
+        color: #727272;
+        font-size: 14px;
+        line-height: 25px;
+        font-style: italic;
+
+    }
+
+    h3 {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        padding: 0px 10px;
+        font-weight: bold;
+        font-style: italic;
+        margin: 0px 50px;
+    }
+
+    .space {
+        width: 10px;
+        height: 10px;
+        margin: 20px 0px;
+        background-color: #f3f3f3b7;
+    }
+
+    .c1 {
+        margin-top: 80px;
+        background-color: #f3f3f3b7;
+    }
+
+    .c {
+        padding-top: 10px;
+    }
+
+    .c2 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-style: italic;
+    }
+
+    .box1 {
+        display: inline-flex;
+        background-color: #ffffff;
+        margin-left: 200px;
+        width: 293px;
+        height: 278px;
+        padding: 20px;
+        padding-right: 40px;
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+        font-style: italic;
+        color: #333333;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .box2 {
+        display: inline-flex;
+        background-color: #ffffff;
+        margin-left: 110px;
+        width: 293px;
+        height: 278px;
+        padding: 20px;
+        padding-right: 40px;
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+        font-style: italic;
+        color: #333333;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .box1:hover {
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .box2:hover {
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .text {
+        text-align: left;
+        color: #727272;
+        font-size: 14px;
+    }
+
+    .download {
+        text-align: left;
+        color: #727272;
+        font-size: 14px;
+        padding: 3px 3px 3px 3px;
+        border: 2px solid #727272;
+        border-radius: 5px;
+    }
+
+    .download:hover {
+        border: 2px solid #333333;
+
+    }
+
+    #myBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+</style>
+<script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<body>
+    <section class="navbar">
+        <div class="left">
+            <img src="/Depstar.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li class="first"><a href="#m1">Designing Principles</a></li>
+                <li class="first"><a href="#search">Search Engine</a></li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="main">
+        <div class="m" id="m1">
+            <h1 class="font">Designing Principles</h1>
+            <p>_______________________________________</p>
+
+        </div>
+    </section>
+    <section class="b0" id="b4">
+        <div class="b">
+            <h1 class="b2">Web Page Design Principles</h1>
+            <p>_______________________________________</p>
+            <div class="b1">
+                Website Purpose
+                <p class="spacee">_________</p>
+                <h3 class="b5">Your website needs to accommodate the needs of the user. Having a simple clear intention
+                    on all pages will help the user interact with what you have to offer. What is the purpose of your
+                    website? Are you imparting practical information like a ‘How to guide’? Is it an entertainment
+                    website like sports coverage or are you selling a product to the user? There are many different
+                    purposes that websites may have but there are core purposes common to all websites.</h3>
+            </div><br><br>
+            <div class="b1">
+                Simplicity
+                <p class="spacee">_________</p>
+                <h3 class="b5">Simplicity is the best way to go when considering the user experience and the usability
+                    of your website. Below are ways to achieve simplicity through design.
+                </h3>
+
+            </div><br><br>
+            <div class="b1">
+                Navigation
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    Navigation is the wayfinding system used on websites where visitors interact and find what they are
+                    looking for. Website navigation is key to retaining visitors. If the website navigation is confusing
+                    visitors will give up and find what they need elsewhere. Keeping navigation simple, intuitive and
+                    consistent on every page is key.
+                </h3>
+            </div><br><br>
+            <div class="b1">
+                Visual Hierarchy
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    Visual hierarchy is the arrangement of elements in order of importance. This is done either by size,
+                    colour, imagery, contrast, typography, whitespace, texture and style. One of the most important
+                    functions of visual hierarchy is to establish a focal point; this shows visitors where the most
+                    important information is.
+                </h3>
+            </div><br><br>
+            <div class="b1">
+                Content
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    An effective website has both great design and great content. Using compelling language great
+                    content can attract and influence visitors by converting them into customers.
+                </h3>
+            </div><br><br>
+            <div class="b1">
+                Grid Based Layout
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    Grids help to structure your design and keep your content organised. The grid helps to align
+                    elements on the page and keep it clean. The grid-based layout arranges content into a clean rigid
+                    grid structure with columns, sections that line up and feel balanced and impose order and results in
+                    an aesthetically pleasing website.
+                </h3>
+            </div><br><br>
+            <div class="b1">
+                Load Time
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    Waiting for a website to load will lose visitors. Nearly half of web visitors expect a site to load
+                    in 2 seconds or less and they will potentially leave a site that isn’t loaded within 3 seconds.
+                    Optimising image sizes will help load your site faster.
+                </h3>
+            </div><br><br>
+            <div class="b1">
+                Mobile Friendly
+                <p class="spacee">_________</p>
+                <h3 class="b5">
+                    More people are using their phones or other devices to browse the web. It is important to consider
+                    building your website with a responsive layout where your website can adjust to different screens.
+                </h3>
+            </div>
+        </div>
+        <div class="b"></div>
+        <div class="space"></div>
+    </section>
+    <section class="c1" id="search">
+        <div class="c">
+            
+            <h1 class="c2">Load Web Page Faster</h1>
+            <p>_________________________</p>
+            <div class="b1">
+                Page Speed
+                <p class="spacee">_________</p>
+                <h3 class="b5">Page Speed refers to how quickly your content loads when someone visits a page on your site. Not to be confused with website speed, page speed represents the loading time of a specific page.</h3>
+            </div><br><br>
+            <div class="b1">
+                Why is page speed important?
+                <p class="spacee">_________</p>
+                <h3 class="b5">When it comes to page loading speed, every second counts. In fact, Google research shows that when loading times increase from one to three seconds, the probability of a bounce (the visitor leaving right away) increases by 32 percent.
+                </h3>
+
+            </div><br><br>
+            <div class="b"></div>
+            <div class="space"></div>
+    </section>
+    <section class="c1" id="search">
+        <div class="c">
+            <h1 class="c2">Search Engine</h1>
+            <p>_________________________</p>
+            <div class="b1">
+                Search Engines
+                <p class="spacee">_________</p>
+                <h3 class="b5">Search engine is a service that allows Internet users to search for content via the World
+                    Wide Web (WWW). A user enters keywords or key phrases into a search engine and receives a list of
+                    Web content results in the form of websites, images, videos or other online data that semantically
+                    match with the search query. The list of content returned via a search engine to a user is known as
+                    a search engine results page (SERP).</h3>
+            </div><br><br>
+            <div class="b1">
+                How Search Engines work?
+                <p class="spacee">_________</p>
+                <h3 class="b5">A search engine performs a number of steps to do its job. First a spider/web crawler
+                    trawls the web for content that is added to the search engine's index. These small bots can scan all
+                    sections and subpages of a website, including content such as video and images.
+                </h3>
+
+            </div><br><br>
+            <div class="b6">
+                Well Known Search Engines
+                <p class="spacee">_________</p>
+
+                <ol type="1">
+                    <li class="size">Google</li>
+                    <li class="size">Bing</li>
+                    <li class="size">Yahoo!</li>
+                    <li class="size">Ask.com</li>
+                    <li class="size">DuckDuckGO</li>
+                </ol>
+
+            </div>
+            <div class="b"></div>
+            <div class="space"></div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+</body>
+
+</html>
